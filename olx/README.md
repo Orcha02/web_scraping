@@ -1,4 +1,4 @@
-# Steps of Selenium Driver install for Google Chrome:
+# Steps to install Selenium Driver for Google Chrome:
 
 ### Descargar driver de selenium:
 
@@ -16,4 +16,4 @@
 
 `chromedriver_win32.zip`
 
-# Inside downloaded folder is the executable we will use
+### Inside downloaded folder is the executable we will use!
