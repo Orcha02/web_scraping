@@ -10,7 +10,7 @@ PAGINACION_ACTUAL = 1
 
 # click al boton de coockies para que no interrumpa nuestras acciones
 try: # Encerramos todo en un try catch para que si no aparece el discilamer, no se caiga el codigo
-  coockies = driver.find_element_by_xpath('//button[@id="cookieDisclaimerButton"]')
+  coockies = driver.find_element_by_xpath('//button[@id="newCookieDisclaimerButton"]')
   coockies.click() # lo obtenemos y le damos click
 except Exception as e:
   print (e) 
