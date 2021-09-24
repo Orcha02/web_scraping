@@ -1,4 +1,4 @@
-# Use `python3 olx_scrapping.py`:
+# Use `python3 price_and_description.py`:
 
 ### Will open browser from webpage we want to make the web-scraping
 
