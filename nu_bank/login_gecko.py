@@ -2,7 +2,6 @@ import os
 import random
 import string
 from time import sleep
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -27,14 +26,14 @@ input_user = WebDriverWait(driver, 10).until(
 input_pass = driver.find_element(By.XPATH, '//*[@id="input_001"]')
 
 # Escribo mi usuario input
-input_user.send_keys("11440578491")
+input_user.send_keys("1007509653")
 
 # Escribo mi contrasena en el input
-input_pass.send_keys("yerar1192")
-
+input_pass.send_keys("password123")
 sleep(10)
 
 # Obtengo el boton de login
 login_button = driver.find_element(By.XPATH, '/html/body/navigation-base/div[1]/div/main/div[1]/div/div[1]/form/button')
+
 # Le doy click
 login_button.click()
