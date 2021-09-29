@@ -10,11 +10,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 
 firefox_options = FirefoxOptions()
-# add the argument and make the browser Headless.
+
+# Add the argument and make the browser Headless.
 firefox_options.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/71.0.3578.80 Chrome/71.0.3578.80 Safari/537.36")
 
-# Instantiate the Webdriver: Mention the executable path of the webdriver you have downloaded
-# if driver is in PATH, no need to provide executable_path
 driver = webdriver.Firefox(executable_path = "./geckodriver.exe", options = firefox_options)
 driver.get('https://app.nubank.com.br/#/login')
 
@@ -22,6 +21,7 @@ driver.get('https://app.nubank.com.br/#/login')
 # Por eso tengo que esperar que aparezca
 input_user = WebDriverWait(driver, 10).until(
       EC.presence_of_element_located((By.XPATH, '//*[@id="username"]')))
+
 # Obtengo los inputs de usuario (linea 28) y password
 input_pass = driver.find_element(By.XPATH, '//*[@id="input_001"]')
 
